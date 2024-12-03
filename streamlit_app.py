@@ -10,15 +10,6 @@ from io import BytesIO
 
 st.title('Variação do Preço por Barril do Petróleo Bruto Brent (FOB)')
 
-# criar aba
-
-st.sidebar.title('Menu')
-st.sidebar.write('Selecione a opção desejada:')
-option = st.sidebar.selectbox(
-        '',
-        ['Introdução', 'Método', 'Análise do Cenário', 'Modelo LSTM', 'Conclusão']
-        )
-
 multi = '''  
         Para executar o código localmente, você pode seguir os passos abaixo:
 
@@ -104,12 +95,5 @@ with tab4:
         st.write('Machine Learning')
 with tab5:
         st.write('Conclusão')
-
-
-
-
-
-
-
 
 
