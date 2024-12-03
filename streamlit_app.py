@@ -43,7 +43,7 @@ if option == 'Introdução':
 
 elif option == 'Método':
 
-        st.subtitle('Método')
+        st.subheader('Método')
         st.write('Para a análise, utilizamos dados fornecidos pelo site do ipeadata, e através de ferramentas como o Python, foi montado um modelo de Machine Learning que realiza a previsão do preço do petróleo diariamente.')
         st.write('Ao utilizarmos destes modelos obtemos diversas vantagens como:')
 
@@ -52,14 +52,14 @@ elif option == 'Método':
         st.write('**Automação e Eficiência:** O uso de ML para previsões reduz a necessidade de intervenção manual constante. Isso resulta em uma maior eficiência operacional, pois os modelos podem fazer previsões de forma autônoma, liberando os analistas para tarefas mais estratégicas.')
         st.write('**Análise em Tempo Real:** O ML é capaz de realizar previsões em tempo real ou quase em tempo real, o que é particularmente útil em áreas como o comércio eletrônico, a previsão do tempo, ou a análise de risco financeiro, onde decisões rápidas podem ser necessárias.')
 elif option == 'Análise do Cenário':
-        # create subtitle
-        st.subtitle('Demanda de Energia')
+        # create subheader
+        st.subheader('Demanda de Energia')
         st.write('Nesse primeiro momento de exploração alteramos a medida de energia no DataSet em relação ao apresentado, pois o valor original de MWh onde havia países com valores superiores a trilhão, onde fizemos a transformação para GWh para um melhor entendimento. Gostaríamos de demonstrar  alguns pontos de demanda de energia do Paises em relação com sua população,  observamos as seguintes informações: ')
         #colocar graficos
         st.write('Se compararmos pela média da População mundial levando em conta os dados de 1950 até 2023 conseguimos observar que se não levarmos em conta a China que seria um dos países com maior quantidade de habitantes os países mais desenvolvidos ocupam a maior parte do topo do ranking de países com maiores demandas por energia. Isso nos mostra que densidade populacional não significa necessariamente mais custo com energia, um país que nos mostra isso seria o Brasil, que mesmo sendo um dos países com a maior média de população não chega a ser um dos dez maiores países com demanda de energia.')
         #colocar graficos
         st.write('Quando levantamos a produção do Óleo bruto conseguimos observar que os Estados Unidos tem uma alta demanda de energia e é um dos que mais o produz, com essa informação podemos supor com muita segurança que os Estados Unidos é um dos países que mais utilizam Petróleo para satisfazer sua demanda por energia. E ao pesquisarmos mais a fundo sobre o assunto conseguimos encontrar artigos do Governo brasileiro que confirmam que ele não é só um dos maiores consumidores como foi o maior consumidor nos anos de 2021 e 2022 ocupando a primeira posição.')
-        st.subtitle('Conflito Armado:')
+        st.subheader('Conflito Armado:')
         #colocar graficos
         # inserir imagem
         url = 'https://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view'
@@ -73,7 +73,7 @@ elif option == 'Análise do Cenário':
         st.write('O conflito do Iraque (2011-2013) se instaurou logo após as tropas dos Estados Unidos se retirarem do território Iraquiano depois de 8 anos de guerra começaram várias revoltas da população local onde se desprendeu uma Guerra Civil que seguiu até meados de 2017. Além de ser o país com a maior quantidade de conflitos armados dentro do período citado, podemos observar a  grafico 3 e verificar que se trata de um dos 10 países que mais produzem petróleo no mundo.')
         st.write('A Guerra Civil na Líbia(2011) engloba a 16ª região que mais produzem petróleo conforme a Imagem 3, houve uma Guerra Civil entre as forças do governo regente de Muammar Gaddafi contra grupos revolucionistas populares que durou até meados do final do ano. Sendo a 9ª região com a maior média de mortos no período, de acordo com a Imagem 5 podemos citar como um dos possíveis motivos.')
         st.write('Houve outros conflitos na época como a Guerra Civil na Síria(2011) e o Conflito no Bahrein (2011-2014).')
-        st.subtitle('Referências Extras')
+        st.subheader('Referências Extras')
         st.write('U.S. ENERGY INFORMATION ADMINISTRATION. **Homepage**. United States: EIA,2024. Disponível em: [https://www.eia.gov](http://https://www.eia.gov). Acesso em:20 nov. 2024.')
 elif option == 'Modelo LSTM':
         st.write('Machine Learning')
