@@ -12,7 +12,6 @@ st.title('Variação do Preço por Barril do Petróleo Bruto Brent (FOB)')
 
 # criar aba
 
-st.sidebar.
 st.sidebar.title('Menu')
 st.sidebar.write('Selecione a opção desejada:')
 option = st.sidebar.selectbox(
