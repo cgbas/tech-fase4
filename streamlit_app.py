@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import seaborn as sns
 import matplotlib.pyplot as plt
 import subprocess
 import urllib.request
 import requests
 from PIL import Image
 from io import BytesIO
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 st.title('Variação do Preço por Barril do Petróleo Bruto Brent (FOB)')
 
@@ -102,10 +104,10 @@ Original file is located at
     https://colab.research.google.com/drive/1Gb3Ch5yoz9dnIax8BqqFZWWMX_2n6poR
 """
 
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import numpy as np
+# import pandas as pd
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+# import numpy as np
 
 """# Criação da tabela para usar no power bi
 
@@ -475,7 +477,7 @@ plt.legend()
 plt.title("Previsão com SARIMA")
 plt.show()
 
-from sklearn.metrics import mean_absolute_error, mean_squared_error
+#from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 # Exemplo comparando previsões com o conjunto de validação
 mae = mean_absolute_error(test['PrecoUSDBarrilBrent'], forecast)
