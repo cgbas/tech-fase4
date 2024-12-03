@@ -62,11 +62,6 @@ elif option == 'Análise do Cenário':
         st.subheader('Conflito Armado:')
         #colocar graficos
         # inserir imagem
-        url = 'https://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view'
-        response = requests.get(url)
-        img = Image.open(BytesIO(response.content))
-        st.image(img, caption='Fonte: IPEA', use_column_width=True)
-
         st.write('Infelizmente muitas são as causas que podem influenciar diretamente e indiretamente na produção e comercialização do óleo bruto, ao verificarmos o valor médio por ano conseguimos constatar que os anos que tiveram os maiores valores seriam entre os anos de 2011 a 2013, onde conseguimos identificar alguns dos conflitos que podem ter influenciado.')
         #colocar graficos
         st.write('Dentro desses anos gostaríamos de citar dois conflitos:')
