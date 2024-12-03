@@ -25,7 +25,7 @@ st.sidebar.markdown('''
         1. Crie um ambiente virtual python:
         ```python -m venv myenv```
         2. Ative o ambiente virtual:
-        ````"myenv\Scripts\activate"```
+        ```myenv\Scripts\activate```
         3. Instale as bibliotecas necessárias:
         ```pip install -r requirements.txt```
         4. Execute o código:
