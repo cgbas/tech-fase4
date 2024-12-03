@@ -20,21 +20,23 @@ option = st.sidebar.selectbox(
         )
 st.sidebar.markdown('''
         Para executar o código localmente, você pode seguir os passos abaixo:
+        0. Clone o repositório:
+        ```git clone https://github.com/GustavoHenriqueDeCarvalho/tech-fase4.git```
         1. Crie um ambiente virtual python:
         ```python -m venv myenv```
         2. Ative o ambiente virtual:
-        ```myenv\Scripts\activate```
+        ````"myenv\Scripts\activate"```
         3. Instale as bibliotecas necessárias:
         ```pip install -r requirements.txt```
         4. Execute o código:
         ```streamlit run streamlit_app.py```
         ''')
 
-st.markdown("*Streamlit* is **really** ***cool***.")
-st.markdown('''
+st.sidebar.markdown("*Streamlit* is **really** ***cool***.")
+st.sidebar.markdown('''
     :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
     :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
-st.markdown("Here's a bouquet &mdash;\
+st.sidebar.markdown("Here's a bouquet &mdash;\
             :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
 
 multi = '''If you end a line with two spaces,
