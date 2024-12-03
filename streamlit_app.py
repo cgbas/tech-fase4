@@ -12,6 +12,7 @@ st.title('Variação do Preço por Barril do Petróleo Bruto Brent (FOB)')
 
 # criar aba
 
+st.sidebar.
 st.sidebar.title('Menu')
 st.sidebar.write('Selecione a opção desejada:')
 option = st.sidebar.selectbox(
@@ -43,44 +44,36 @@ st.sidebar.markdown(multi)
 #             :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
 
 
-if option == 'Introdução':
+tab1, tab2, tab3, tab4, tab5 = st.tabs(['Introdução', 'Método', 'Análise do Cenário', 'Modelo LSTM', 'Conclusão'])
+
+with tab1:
         st.subheader('Introdução')
         multi = '''
-                Você foi contratado(a) para uma consultoria, e seu trabalho envolve analisar os dados de preço do petróleo Brent, 
-                 que pode ser encontrado no site do Ipea. Essa base de dados histórica envolve duas colunas: data e preço (em dólares).
-
-
-                Um grande cliente do segmento pediu para que a consultoria desenvolvesse um dashboard interativo para gerar insights
-                 relevantes para tomada de decisão. Além disso, solicitaram que fosse desenvolvido um modelo de Machine Learning para fazer o forecasting do preço do petróleo.
-
-
-                Este relatório tem como objetivo analisar o comportamento do preço do petróleo brent, a fim de gerar insights para tomadas de decisões
-                  baseadas em dados e fornecer indicadores para um fácil acompanhamento. O preço do petróleo Brent, que é uma referência global para
-                   o valor do petróleo, é determinado por uma combinação de fatores econômicos, políticos e ambientais. O Brent é extraído principalmente do Mar do Norte e serve como um benchmark para os contratos de petróleo negociados em mercados internacionais. 
-                
-                
-                O preço do Brent é influenciado por eventos como conflitos geopolíticos, decisões da Organização dos Países Exportadores de Petróleo (OPEP),
-                 mudanças na oferta e demanda global, flutuações cambiais e o crescimento ou desaceleração econômica mundial. Outros fatores,
-                  como inovações tecnológicas na extração de petróleo e as políticas de transição para energias renováveis, também afetam o mercado do petróleo Brent.
-
-
-                Durante crises globais, como a pandemia de COVID-19 ou tensões políticas em países produtores, o preço do Brent pode experimentar
-                 volatilidade significativa. Por outro lado, períodos de estabilidade política e crescimento econômico geralmente resultam em preços mais equilibrados.
-
-
-                As informações e análises apresentados dentro deste relatório apresentam dados fornecidos pelo site do ipeadata [Site - ipeadata](http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view) utilizamos informações do passado para entender os comportamentos e realizar previsão.'
-                
-                O Dashboard foi realizado utilizando o Power Bi da Microsoft onde foram realizados insights utilizando dados do inicio de 2000 até 2017. Para que seja compreendido utilizamos dados sobre demanda de energia, mortes por conflito armado e produção de petróleo.
-                Clique [aqui](http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view) para acessar os dados do IPEA
-                Clique [aqui](https://app.powerbi.com/view?r=eyJrIjoiNTg0ZDMyY2MtMzMwNi00ZDQ3LWEzY2EtMDVmZjYzZWZiYmQwIiwidCI6IjFjZTUxYjk4LWY4MmYtNGYxNy1iNDRmLTZlNzc0MDE5ZDBlOSIsImMiOjR9) para acessar o PowerBI
-                Clique [aqui](https://colab.research.google.com/drive/1Gb3Ch5yoz9dnIax8BqqFZWWMX_2n6poR#scrollTo=X1RRCse9wRZI) para acessar o Machine Learning.
+        Você foi contratado(a) para uma consultoria, e seu trabalho envolve analisar os dados de preço do petróleo Brent,
+        que pode ser encontrado no site do Ipea. Essa base de dados histórica envolve duas colunas: data e preço (em dólares).    
+        
+        Um grande cliente do segmento pediu para que a consultoria desenvolvesse um dashboard interativo para gerar insights
+         relevantes para tomada de decisão. Além disso, solicitaram que fosse desenvolvido um modelo de Machine Learning para fazer o forecasting do preço do petróleo.  
+        Este relatório tem como objetivo analisar o comportamento do preço do petróleo brent, a fim de gerar insights para tomadas de decisões
+         baseadas em dados e fornecer indicadores para um fácil acompanhamento. O preço do petróleo Brent, que é uma referência global para
+          valor do petróleo, é determinado por uma combinação de fatores econômicos, políticos e ambientais. O Brent é extraído principalmente do Mar do
+           Norte e serve como um benchmark para os contratos de petróleo negociados em mercados internacionais.  
+        
+        O preço do Brent é influenciado por eventos como conflitos geopolíticos, decisões da Organização dos Países Exportadores de Petróleo (OPEP),
+         mudanças na oferta e demanda global, flutuações cambiais e o crescimento ou desaceleração econômica mundial. Outros fatores,
+          como inovações tecnológicas na extração de petróleo e as políticas de transição para energias renováveis, também afetam o mercado do petróleo Brent.   
+        
+        Durante crises globais, como a pandemia de COVID-19 ou tensões políticas em países produtores, o preço do Brent pode experimentar
+                volatilidade significativa. Por outro lado, períodos de estabilidade política e crescimento econômico geralmente resultam em preços mais equilibrados.  
+        As informações e análises apresentados dentro deste relatório apresentam dados fornecidos pelo site do ipeadata [Site - ipeadata](http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view) utilizamos informações do passado para entender os comportamentos e realizar previsão.'
+        
+        O Dashboard foi realizado utilizando o Power Bi da Microsoft onde foram realizados insights utilizando dados do inicio de 2000 até 2017. Para que seja compreendido utilizamos dados sobre demanda de energia, mortes por conflito armado e produção de petróleo.
+        Clique [aqui](http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view) para acessar os dados do IPEA
+        Clique [aqui](https://app.powerbi.com/view?r=eyJrIjoiNTg0ZDMyY2MtMzMwNi00ZDQ3LWEzY2EtMDVmZjYzZWZiYmQwIiwidCI6IjFjZTUxYjk4LWY4MmYtNGYxNy1iNDRmLTZlNzc0MDE5ZDBlOSIsImMiOjR9) para acessar o PowerBI
+        Clique [aqui](https://colab.research.google.com/drive/1Gb3Ch5yoz9dnIax8BqqFZWWMX_2n6poR#scrollTo=X1RRCse9wRZI) para acessar o Machine Learning.
         '''
-
         st.markdown(multi)
-
-
-elif option == 'Método':
-
+with tab2:
         st.subheader('Método')
         st.write('Para a análise, utilizamos dados fornecidos pelo site do ipeadata, e através de ferramentas como o Python, foi montado um modelo de Machine Learning que realiza a previsão do preço do petróleo diariamente.')
         st.write('Ao utilizarmos destes modelos obtemos diversas vantagens como:')
@@ -89,7 +82,7 @@ elif option == 'Método':
         st.write('**Capacidade de Aprendizado Automático:** Uma das principais vantagens do ML é que ele pode aprender automaticamente a partir de dados históricos sem a necessidade de programações manuais detalhadas. Isso permite que o modelo se adapte e melhore com o tempo, à medida que mais dados são disponibilizados.')
         st.write('**Automação e Eficiência:** O uso de ML para previsões reduz a necessidade de intervenção manual constante. Isso resulta em uma maior eficiência operacional, pois os modelos podem fazer previsões de forma autônoma, liberando os analistas para tarefas mais estratégicas.')
         st.write('**Análise em Tempo Real:** O ML é capaz de realizar previsões em tempo real ou quase em tempo real, o que é particularmente útil em áreas como o comércio eletrônico, a previsão do tempo, ou a análise de risco financeiro, onde decisões rápidas podem ser necessárias.')
-elif option == 'Análise do Cenário':
+with tab3:
         # create subheader
         st.subheader('Demanda de Energia')
         st.write('Nesse primeiro momento de exploração alteramos a medida de energia no DataSet em relação ao apresentado, pois o valor original de MWh onde havia países com valores superiores a trilhão, onde fizemos a transformação para GWh para um melhor entendimento. Gostaríamos de demonstrar  alguns pontos de demanda de energia do Paises em relação com sua população,  observamos as seguintes informações: ')
@@ -108,9 +101,9 @@ elif option == 'Análise do Cenário':
         st.write('Houve outros conflitos na época como a Guerra Civil na Síria(2011) e o Conflito no Bahrein (2011-2014).')
         st.subheader('Referências Extras')
         st.write('U.S. ENERGY INFORMATION ADMINISTRATION. **Homepage**. United States: EIA,2024. Disponível em: [https://www.eia.gov](http://https://www.eia.gov). Acesso em:20 nov. 2024.')
-elif option == 'Modelo LSTM':
+with tab4:
         st.write('Machine Learning')
-elif option == 'Conclusão':
+with tab5:
         st.write('Conclusão')
 
 
