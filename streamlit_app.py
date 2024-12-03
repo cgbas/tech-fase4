@@ -32,9 +32,7 @@ multi = '''
         4. Execute o código:
         `streamlit run streamlit_app.py`
 '''
-st.sidebar.markdown('''
-
-        ''')
+st.sidebar.markdown(multi)
 
 # st.sidebar.markdown("*Streamlit* is **really** ***cool***.")
 # st.sidebar.markdown('''
