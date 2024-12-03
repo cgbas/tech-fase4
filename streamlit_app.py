@@ -32,18 +32,14 @@ st.sidebar.markdown('''
         ```streamlit run streamlit_app.py```
         ''')
 
-st.sidebar.markdown("*Streamlit* is **really** ***cool***.")
-st.sidebar.markdown('''
-    :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
-    :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
-st.sidebar.markdown("Here's a bouquet &mdash;\
-            :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
+# st.sidebar.markdown("*Streamlit* is **really** ***cool***.")
+# st.sidebar.markdown('''
+#     :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
+#     :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
+# st.sidebar.markdown("Here's a bouquet &mdash;\
+#             :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
 
-multi = '''If you end a line with two spaces,
-a soft return is used for the next line.
 
-Two (or more) newline characters in a row will result in a hard return.
-'''
 st.markdown(multi)
 
 if option == 'Introdução':
@@ -70,7 +66,7 @@ if option == 'Introdução':
                 Durante crises globais, como a pandemia de COVID-19 ou tensões políticas em países produtores, o preço do Brent pode experimentar
                  volatilidade significativa. Por outro lado, períodos de estabilidade política e crescimento econômico geralmente resultam em preços mais equilibrados.
 
-                 
+
                 As informações e análises apresentados dentro deste relatório apresentam dados fornecidos pelo site do ipeadata [Site - ipeadata](http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view) utilizamos informações do passado para entender os comportamentos e realizar previsão.'
                 
                 O Dashboard foi realizado utilizando o Power Bi da Microsoft onde foram realizados insights utilizando dados do inicio de 2000 até 2017. Para que seja compreendido utilizamos dados sobre demanda de energia, mortes por conflito armado e produção de petróleo.
