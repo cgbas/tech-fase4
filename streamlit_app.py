@@ -18,6 +18,31 @@ option = st.sidebar.selectbox(
         '',
         ['Introdução', 'Método', 'Análise do Cenário', 'Modelo LSTM', 'Conclusão']
         )
+st.sidebar.markdown('''
+        Para executar o código localmente, você pode seguir os passos abaixo:
+        1. Crie um ambiente virtual python:
+        ```python -m venv myenv```
+        2. Ative o ambiente virtual:
+        ```myenv\Scripts\activate```
+        3. Instale as bibliotecas necessárias:
+        ```pip install -r requirements.txt```
+        4. Execute o código:
+        ```streamlit run streamlit_app.py```
+        ''')
+
+st.markdown("*Streamlit* is **really** ***cool***.")
+st.markdown('''
+    :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
+    :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
+st.markdown("Here's a bouquet &mdash;\
+            :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
+
+multi = '''If you end a line with two spaces,
+a soft return is used for the next line.
+
+Two (or more) newline characters in a row will result in a hard return.
+'''
+st.markdown(multi)
 
 if option == 'Introdução':
         st.write('Introdução')
