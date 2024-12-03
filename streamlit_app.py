@@ -7,7 +7,6 @@ import urllib.request
 import requests
 from PIL import Image
 from io import BytesIO
-from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 st.title('Variação do Preço por Barril do Petróleo Bruto Brent (FOB)')
 
@@ -476,7 +475,7 @@ plt.legend()
 plt.title("Previsão com SARIMA")
 plt.show()
 
-#from sklearn.metrics import mean_absolute_error, mean_squared_error
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 # Exemplo comparando previsões com o conjunto de validação
 mae = mean_absolute_error(test['PrecoUSDBarrilBrent'], forecast)
