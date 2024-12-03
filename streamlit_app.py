@@ -40,8 +40,6 @@ st.sidebar.markdown('''
 #             :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
 
 
-st.markdown(multi)
-
 if option == 'Introdução':
         st.subheader('Introdução')
         multi = '''
