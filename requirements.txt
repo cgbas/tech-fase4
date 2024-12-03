@@ -1,2 +1,5 @@
 streamlit
 matplotlib
+keras
+tensorflow
+prophet
