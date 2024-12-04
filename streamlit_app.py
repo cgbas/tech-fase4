@@ -59,13 +59,15 @@ with tab1:
                 volatilidade significativa. Por outro lado, períodos de estabilidade política e crescimento econômico geralmente resultam em preços mais equilibrados.  
         As informações e análises apresentados dentro deste relatório apresentam dados fornecidos pelo site do ipeadata [Site - ipeadata](http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view) utilizamos informações do passado para entender os comportamentos e realizar previsão.'
         
-        O Dashboard foi realizado utilizando o Power Bi da Microsoft onde foram realizados insights utilizando dados do inicio de 2000 até 2017. Para que seja compreendido utilizamos dados sobre demanda de energia, mortes por conflito armado e produção de petróleo.
+        O Dashboard foi realizado utilizando o Power Bi da Microsoft onde foram realizados insights utilizando dados do inicio de 2000 até 2017. Para que seja compreendido utilizamos dados sobre demanda de energia, mortes por conflito armado e produção de petróleo.  
+
+        Clique [aqui](http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view) para acessar os dados do IPEA  
+        Clique [aqui](https://app.powerbi.com/view?r=eyJrIjoiNTg0ZDMyY2MtMzMwNi00ZDQ3LWEzY2EtMDVmZjYzZWZiYmQwIiwidCI6IjFjZTUxYjk4LWY4MmYtNGYxNy1iNDRmLTZlNzc0MDE5ZDBlOSIsImMiOjR9) para acessar o PowerBI  
+        Clique [aqui](https://colab.research.google.com/drive/1Gb3Ch5yoz9dnIax8BqqFZWWMX_2n6poR#scrollTo=X1RRCse9wRZI) para acessar o Machine Learning.
         '''
-        st.write('Clique [aqui](http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view) para acessar os dados do IPEA)'
-        st.write('Clique [aqui](https://app.powerbi.com/view?r=eyJrIjoiNTg0ZDMyY2MtMzMwNi00ZDQ3LWEzY2EtMDVmZjYzZWZiYmQwIiwidCI6IjFjZTUxYjk4LWY4MmYtNGYxNy1iNDRmLTZlNzc0MDE5ZDBlOSIsImMiOjR9) para acessar o PowerBI)'
-        st.write('Clique [aqui](https://colab.research.google.com/drive/1Gb3Ch5yoz9dnIax8BqqFZWWMX_2n6poR#scrollTo=X1RRCse9wRZI) para acessar o Machine Learning.)'
-        
-        st.markdown(multi)
+
+        st.sidebar.markdown(multi)
+
 with tab2:
         st.subheader('Método')
         st.write('Para a análise, utilizamos dados fornecidos pelo site do ipeadata, e através de ferramentas como o Python, foi montado um modelo de Machine Learning que realiza a previsão do preço do petróleo diariamente.')
