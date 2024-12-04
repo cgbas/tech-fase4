@@ -13,3 +13,4 @@ tensorflow-hub==0.16.1
 tensorflow-io-gcs-filesystem==0.37.1
 tensorflow-metadata==1.13.1
 tensorflow-probability==0.24.0
+prophet==1.1.6
