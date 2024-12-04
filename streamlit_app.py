@@ -8,6 +8,8 @@ import requests
 import seaborn as sns
 from PIL import Image
 from io import BytesIO
+import scikit-learn as sklearn
+
 
 st.title('Variação do Preço por Barril do Petróleo Bruto Brent (FOB)')
 
