@@ -1,19 +1,13 @@
-# 🎈 Blank app template
+# Tech Challenge Fase 4
+## Para executar o código localmente, você pode seguir os passos abaixo:
 
-A simple Streamlit app template for you to modify!
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
-
-### How to run it on your own machine
-
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+0. Clone o repositório:  
+> git clone https://github.com/GustavoHenriqueDeCarvalho/tech-fase4.git
+1. Crie um ambiente virtual python:  
+> python -m venv myenv
+2. Ative o ambiente virtual:  
+> myenv\Scripts\activate
+3. Instale as bibliotecas necessárias:  
+> pip install -r requirements.txt
+4. Execute o código:  
+> streamlit run streamlit_app.py
