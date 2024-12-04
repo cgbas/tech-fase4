@@ -4,3 +4,4 @@ numpy
 matplotlib==3.8.0
 requests==2.32.3
 seaborn==0.13.2
+statsmodels==0.14.4
