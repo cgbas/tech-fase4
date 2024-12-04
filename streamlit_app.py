@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import subprocess
 import urllib.request
 import requests
+import seaborn as sns
 from PIL import Image
 from io import BytesIO
 
@@ -240,11 +241,11 @@ PBIDash.to_csv('PBIDash.csv', index=False)
 
 """#Forecasting"""
 
-# df = pd.read_csv('content/PrecoPetroleoBrentUSDPorDIA.csv')
-# df['Data'] = df['Data'].astype('datetime64[ns]')
-# df['PrecoUSDBarrilBrent'] = df['PrecoUSDBarrilBrent'].str.replace(',', '.').astype('float64')
-# df.info()
-# df.head()
+df = pd.read_csv('content/PrecoPetroleoBrentUSDPorDIA.csv')
+df['Data'] = df['Data'].astype('datetime64[ns]')
+df['PrecoUSDBarrilBrent'] = df['PrecoUSDBarrilBrent'].str.replace(',', '.').astype('float64')
+df.info()
+df.head()
 
 #indica o tamanho do gráfico
 fig, ax = plt.subplots(figsize=(17, 4))
