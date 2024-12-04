@@ -242,7 +242,8 @@ PBIDash.to_csv('PBIDash.csv', index=False)
 """#Forecasting"""
 
 df = pd.read_csv('content/PrecoPetroleoBrentUSDPorDIA.csv')
-df['Data'] = df['Data'].astype('datetime64[ns]')
+#df['Data'] = df['Data'].astype('datetime64[ns]')
+df['Data'] = pd.to_datetime(df['Data'], format='%d-%m-%Y')
 df['PrecoUSDBarrilBrent'] = df['PrecoUSDBarrilBrent'].str.replace(',', '.').astype('float64')
 df.info()
 df.head()
